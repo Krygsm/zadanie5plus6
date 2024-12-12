@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Wydarzenie w Sudetach"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="18.25dp"
+        android:textStyle="bold"
+    />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:src="@mipmap/ic_banner_foreground"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 polubień"
+        android:layout_gravity="right"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <Button
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:text="POLUB"
+            android:textAlignment="center"
+            android:id="@+id/likeButton"
+        />
+        <Button
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:text="USUŃ"
+            android:textAlignment="center"
+            android:id="@+id/deleteButton"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailInput"
+        android:hint="email"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passInput"
+        android:inputType="textPassword"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confInput"
+        android:inputType="textPassword"
+    />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+     />
+
+</LinearLayout>
