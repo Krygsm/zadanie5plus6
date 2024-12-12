@@ -1,81 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
->
+    tools:context=".MainActivity">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Wydarzenie w Sudetach"
         android:padding="10dp"
+        android:text="Wydarzenie w Sudetach"
         android:textAlignment="center"
         android:textSize="18.25dp"
-        android:textStyle="bold"
-    />
+        android:textStyle="bold" />
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="233dp"
-        android:src="@mipmap/ic_banner_foreground"
-    />
+        android:layout_height="270dp"
+        android:src="@drawable/img" />
+
     <TextView
+        android:id="@+id/likeCountView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0 polubień"
         android:layout_gravity="right"
-    />
+        android:text="0 polubień"
+        android:padding="8dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-    >
+        android:layout_height="wrap_content">
 
         <Button
-            android:layout_width="206dp"
-            android:layout_height="wrap_content"
-            android:text="POLUB"
-            android:textAlignment="center"
             android:id="@+id/likeButton"
-            android:backgroundTint="@color/sky_blue"
-        />
-        <Button
             android:layout_width="206dp"
             android:layout_height="wrap_content"
-            android:text="USUŃ"
-            android:textAlignment="center"
-            android:id="@+id/deleteButton"
             android:backgroundTint="@color/sky_blue"
-            />
+            android:text="POLUB"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/sky_blue"
+            android:text="USUŃ"
+            android:textAlignment="center" />
     </LinearLayout>
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/emailInput"
-        android:hint="email"
-    />
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="email" />
+
+    <EditText
         android:id="@+id/passInput"
-        android:inputType="textPassword"
-    />
-    <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    <EditText
         android:id="@+id/confInput"
-        android:inputType="textPassword"
-    />
-    
-    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+
+    <Button
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="20dp"
-     />
+        android:text="ZAPISZ"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="ZOBACZ UCZESTNIKA"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/notificationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp" />
 
 </LinearLayout>
